@@ -1,2 +1,2 @@
-# FoutPointO - User Testing
-FourPointO snapshot at usertesting
+# FourPointO
+GUI II Project Sequence 

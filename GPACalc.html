@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+  <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+</head>
+
+<body>
+
+<div class="applicationWrapper">
+  <input class="close" name="user" type="image" src="media/user.jpg">
+  <!--Top nav bar-->
+  <ul class="nav">
+    <li>
+      <button class="active" onclick="location.href='GPACalc.html';">GPA Calculation</button>
+    </li>
+    <li>
+      <button onclick="location.href='GradeCalc.html';">Grade Calculation</button>
+    </li>
+    <li>
+      <button onclick="location.href='GradeDistri.html';">Grade Distribution</button>
+    </li>
+    <li>
+      <button onclick="location.href='MyGrades.html';">My Grades</button>
+    </li>
+  </ul>
+
+
+<!--logo div-->
+<div class="logo">
+  <img src="media/logo.png" alt="logo">
+</div>
+<div class="container">
+<div class="overallDisplay">
+  <!--displays your overall gpa/major gpa -->
+  <div class="leftGPA" name="wrapGPA">Overall GPA: <div name="GPA">N/a</div></div>
+  <div class="rightGPA" name="wrapmajorGPA">Overall Major GPA: <div name="majorGPA">N/a</div></div>
+  <!--displays your overall gpa/major gpa -->
+  <button class="button" name="addSemester">Add Semester</button>
+  <button class="button" name="saveData">Save Data</button>
+</div>
+
+<div class="semesterList">
+<!---This will be a div that gets duplicated and
+  removed as semesters get added or removed dynamically
+  -->
+
+
+</div>
+</div>
+<script src="js/GPACalc.js"></script>
+</body>
+</html>
